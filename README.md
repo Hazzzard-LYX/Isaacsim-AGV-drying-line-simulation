@@ -16,7 +16,7 @@ An AGV routing, scheduling, and action-level simulation project for an industria
 
 A full task execution demo is available in the project release:
 
-➡️ [Download / View Demo Video](../../releases/tag/v1.0)
+➡️ [Download / View Demo Video](../../releases/tag/V1.0)
 
 ## 功能概览
 
