@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="csrotate">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.750000000000001 0.499999999999999 0.730525494773668"
+        rpy="0 0 0" />
+      <mass
+        value="505.715792744855" />
+      <inertia
+        ixx="170.636934496339"
+        ixy="-4.14682837222157E-15"
+        ixz="-1.53320904926039E-14"
+        iyy="221.413157922601"
+        iyz="-1.29016641778743E-13"
+        izz="145.898486955198" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://csrotate/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://csrotate/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

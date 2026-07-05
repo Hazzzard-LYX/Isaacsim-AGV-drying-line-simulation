@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="oven">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.1229487224144 2.03287980818804 1.46609629127649"
+        rpy="0 0 0" />
+      <mass
+        value="6492.8" />
+      <inertia
+        ixx="11893.4361175559"
+        ixy="5.50128415819595E-13"
+        ixz="1.4268629813089E-12"
+        iyy="15467.445949932"
+        iyz="-2053.85510850481"
+        izz="10981.7811809572" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left">
+    <inertial>
+      <origin
+        xyz="-0.750000000000001 0.199999999999999 -1.1719387755102"
+        rpy="0 0 0" />
+      <mass
+        value="285.6" />
+      <inertia
+        ixx="105.196"
+        ixy="-7.99693644637533E-17"
+        ixz="-3.40468394218382E-15"
+        iyy="148.97848"
+        iyz="-1.05896772832165E-16"
+        izz="44.2584800000001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left"
+    type="prismatic">
+    <origin
+      xyz="2.1229 3.0969 2.3219"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="left" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right">
+    <inertial>
+      <origin
+        xyz="0.749999999999998 0.199999999999999 -1.07357534054746"
+        rpy="0 0 0" />
+      <mass
+        value="285.6" />
+      <inertia
+        ixx="105.196"
+        ixy="-1.7942684375309E-16"
+        ixz="-2.5165055224837E-15"
+        iyy="148.97848"
+        iyz="2.80368321152017E-16"
+        izz="44.2584800000001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://oven/meshes/right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right"
+    type="prismatic">
+    <origin
+      xyz="2.1229 3.0969 2.3219"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
