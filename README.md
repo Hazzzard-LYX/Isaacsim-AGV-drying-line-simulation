@@ -1,5 +1,13 @@
 # 烘干生产线 AGV 路径规划与 Isaac Sim 仿真
 
+# Isaac Sim AGV Drying Line Simulation
+
+<p align="center">
+  <img src="docs/AGV-banner.png" alt="Isaac Sim AGV Drying Line Simulation" width="100%">
+</p>
+
+An AGV routing, scheduling, and action-level simulation project for an industrial drying production line in Isaac Sim.
+
 本仓库用于展示烘干生产线中多台 AGV 搬运烘车的流程仿真。项目包含烘箱、AGV、烘车 URDF/STL 模型，使用 Python 脚本生成 Isaac Sim USD 场景，并通过时间采样动画播放完整生产节拍。
 
 当前仿真的重点是产线布局、路径流程、调度逻辑和可视化展示，不是实时闭环控制或物理接触动力学验证。
