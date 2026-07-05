@@ -12,6 +12,12 @@ An AGV routing, scheduling, and action-level simulation project for an industria
 
 当前仿真的重点是产线布局、路径流程、调度逻辑和可视化展示，不是实时闭环控制或物理接触动力学验证。
 
+## 🎬 Demo Video
+
+A full task execution demo is available in the project release:
+
+➡️ [Download / View Demo Video](../../releases/tag/v1.0)
+
 ## 功能概览
 
 - 生成包含 4 排烘箱、进料区、冷却区和 AGV 通道的烘干生产线场景。
